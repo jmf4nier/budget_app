@@ -1,23 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./components/Home";
+import GreenDisplay from "./components/GreenDisplay";
+import RedDisplay from "./components/RedDisplay";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          On our way
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>
+          <Home firstName="Budget" />
+        </h1>
+        <GreenDisplay />
+        <br></br>
+        <RedDisplay />
       </header>
     </div>
   );
